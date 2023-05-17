@@ -18,6 +18,13 @@
   * camelCase named variables (firstLetterOfFirstWordIsLowerCase)
   * Make the naming of variables understandable rather than commenting on their use beside it. The variable name should be enough to know what it is for. Longer variable names are okay.
 
+* Creating Functions:
+ * camelCase named functions
+ * Comment on the functions purpose (as brief or as in depth as needed)
+ * Comment the parameter names, types, and purpose (if applicable)
+ * Comment the return type
+
+ 
 * Creating Files:
   * Naming convention for files will be all lowercase ‘-’ separated.
   * (i.e. latte-art-seed-generation.js)
