@@ -18,6 +18,11 @@
   * camelCase named variables (firstLetterOfFirstWordIsLowerCase)
   * Make the naming of variables understandable rather than commenting on their use beside it. The variable name should be enough to know what it is for. Longer variable names are okay.
 
+* Global Constants:
+  * If there are constants named outside of functions, label them all uppercase with underscores.
+  * (i.e. CONSTANT_NAME)
+
+ 
 * Creating Functions:
   * camelCase named functions
   * Comment on the functions purpose (as brief or as in depth as needed)
