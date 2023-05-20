@@ -68,17 +68,18 @@
         return cardImages_package[randomIndex];
     }
 
-    const cardImages = ["card_package/justice.png", "card_package/image2.png", "card_package/image3.png", "card_package/image4.png", "card_package/image5.png"];
+    var store_cardImages = ["card_package/justice.png", "card_package/image2.png", "card_package/image3.png", "card_package/image4.png", "card_package/image5.png"];
     //!!!!!
     //!!!!!
     // it will repeat here
     for (let i = 0; i <5;i++){
         let curr = getRandomImage();
-        while(curr in cardImages){
+        while(curr in store_cardImages){
             curr = getRandomImage();
         }
-        cardImages[i] = curr;
+        store_cardImages[i] = curr;
     }
+    const cardImages = store_cardImages;
     // const cardImages = ["card_package/justice.png", "card_package/image2.png", "card_package/image3.png", "card_package/image4.png", "card_package/image5.png"];
 
     // Array to store flipped state of each card
