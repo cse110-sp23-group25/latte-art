@@ -2,8 +2,6 @@ name: JSDocs
 
 on:
   push:
-  pull_request:
-    branches: [ "main" ]
 
 jobs:
   deploy:
@@ -17,8 +15,8 @@ jobs:
       - name: Build
         uses: andstor/jsdoc-action@v1
         with:
-          recurse: true
           source_dir: latte-art/js
+          recurse: true
           output_dir: latte-art/documentation
           template: minami
           front_page: README.md
