@@ -29,3 +29,7 @@ function fortuneSelector(stats) {
     const fortune = seed % 10; 
     return POSSIBLE_FORTUNES[fortune];
 }
+
+
+
+module.exports = {seedGeneration, fortuneSelector};
