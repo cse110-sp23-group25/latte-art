@@ -15,7 +15,7 @@
   flex-direction: column;
 }
 
-.container h1{
+.container h1 {
   width: 90%;
   display: flex;
   justify-content: center;
@@ -43,31 +43,31 @@
 .latteart {
   width: 100%; /* Adjust the size as desired */
   height: 100%;
-  background-image: url('../assets/blackcoffee.jpg');
+  background-image: url("../assets/blackcoffee.jpg");
   background-size: cover;
   background-position: center center;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .latteart img {
   display: none;
   width: 30%;
-  height:  30%;
+  height: 30%;
   border-radius: 100px;
   background-color: white;
 }
 
-
-
-.hero{
+.hero {
   width: 100%;
   background: white;
   display: flex;
   align-items: center;
   justify-content: center;
-} 
-.card{
+}
+
+.card {
   width: 100%;
   background: #fff;
   border-radius: 15px;
@@ -78,7 +78,7 @@
   justify-content: center;
 }
 
-label{
+label {
   width: 200px;
   background: #e3362c;
   color: #fff;
