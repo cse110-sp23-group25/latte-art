@@ -5,7 +5,10 @@
   "env": {
     "es6": true
   },
+  "plugins": [
+    "json"
+  ],
   "rules": {
-        "indent": [4, "tab"],
+    "indent": ["error", 4]
   }
 }
