@@ -6,6 +6,6 @@
     "es6": true
   },
   "rules": {
-    "indent": [4, "tab"]
+    "indent": ["error", 4]
   }
 }
