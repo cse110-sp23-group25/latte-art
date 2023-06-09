@@ -48,7 +48,7 @@ function seedGeneration (stats) { // TODO: once we know what the amount value lo
  *  fortune: string */
 function fortuneSelector (stats) {
     const seed = seedGeneration(stats);
-    const fortune = seed % 10; 
+    const fortune = seed % 10;
     return POSSIBLE_FORTUNES[fortune];
 }
 
