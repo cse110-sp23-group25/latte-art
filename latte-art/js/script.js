@@ -21,7 +21,6 @@ function init () {
     })
 }
 
-
 const POSSIBLE_FORTUNES = ['A relationship in your life may face difficulties. Open communication is key to finding resolution.', 'A valuable lesson will be learned from a recent setback. Use it to your advantage.', 'Challenges lie ahead, testing your strength and determination. Stay focused and persevere.', 'Be cautious with your finances. Unexpected expenses may arise, requiring careful budgeting.', 'A minor setback is on the horizon, but don\'t worry. Your resilience will help you overcome it.', 'Beware of false friends and deceptive situations. Trust your instincts and tread carefully.', 'Unexpected good fortune is on its way. Prepare for a windfall that will change your life.', 'Love is in the air! Prepare for a whirlwind romance filled with passion and happiness.', 'Your talents will be recognized and rewarded, bringing you great joy and prosperity.', 'A great opportunity awaits you just around the corner. Success is within your grasp!']
 
 /**
