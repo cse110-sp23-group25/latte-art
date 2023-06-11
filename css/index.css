@@ -1,0 +1,144 @@
+body {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  font-family: Poppins, sans-serif;
+  width: 100vw;
+  max-width: 2000px;
+  min-height: 100vh;
+  background-image: url("../assets/background.jpg");
+  margin: 0;
+  padding: 0;
+}
+
+.ticker-item a img {
+  margin-top: 10px;
+  width: 90%;
+}
+
+header {
+  height: 20vh;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 25%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.logo img {
+  width: 30%;
+  border-radius: 15vw;
+}
+
+#controls {
+  width: 25%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#controls img {
+  margin-right: 30px;
+  width: 20%;
+}
+
+.title {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: min(50px, calc(4vw + 12px));
+  color: black;
+  background-color: transparent;
+}
+
+.begin-cont {
+  height: 20vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
+
+.begin {
+  width: max(200px, 20vw);
+  height: max(50px, 5vw);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: 2px 2px black;
+  border-radius: 5vw;
+  margin-bottom: 50px;
+  font-size: min(30px, 2vw + 12px);
+  color: black;
+  text-decoration: none;
+}
+
+.ticker-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: 45vh;
+  width: 100%;
+  overflow: hidden;
+  background-color: transparent;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#ticker-wrapper {
+  height: 90%;
+  width: 100%;
+  padding-right: 200%;
+}
+
+@keyframes ticker {
+
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+
+}
+
+.ticker-transition {
+  height: 100%;
+  width: 200%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  white-space: nowrap;
+  padding-left: 200%;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: ticker;
+  animation-duration: 30s;
+}
+
+.ticker-item {
+  border-radius: 20px;
+  height: 100%;
+  width: 40%;
+  padding: 0 20px;
+  margin: 0 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  word-break: normal;
+  white-space: normal;
+}

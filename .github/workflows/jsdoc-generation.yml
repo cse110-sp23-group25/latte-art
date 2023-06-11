@@ -15,9 +15,9 @@ jobs:
       - name: Build
         uses: andstor/jsdoc-action@v1
         with:
-          source_dir: latte-art/js
+          source_dir: js
           recurse: true
-          output_dir: latte-art/documentation
+          output_dir: documentation
           template: minami
           front_page: README.md
 
