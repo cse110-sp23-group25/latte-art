@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Poppins, sans-serif;
-  background-image: url('../assets/background.jpg');
+  background-image: url("../assets/background.jpg");
 }
 
 header {
@@ -12,6 +12,19 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.logo img {
+  width: 30%;
+  border-radius: 15vw;
+}
+
+.latteart img {
+  display: none;
+  width: 40%;
+  height: 40%;
+  border-radius: 100vw;
+  background-color: white;
 }
 
 #controls {
@@ -50,11 +63,6 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-}
-
-.logo img {
-  width: 30%;
-  border-radius: 15vw;
 }
 
 .container {
@@ -106,14 +114,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.latteart img {
-  display: none;
-  width: 40%;
-  height: 40%;
-  border-radius: 100vw;
-  background-color: white;
 }
 
 .hero {
