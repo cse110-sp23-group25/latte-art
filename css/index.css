@@ -8,19 +8,34 @@ body {
   width: 100vw;
   max-width: 2000px;
   min-height: 100vh;
-  background-image: url('../assets/background.jpg');
+  background-image: url("../assets/background.jpg");
   margin: 0;
   padding: 0;
+}
+
+.ticker-item a img {
+  margin-top: 10px;
+  width: 90%;
 }
 
 header {
   height: 20vh;
   width: 90%;
-  padding-top: 20px;
-  padding-bottom: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.logo {
+  width: 25%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.logo img {
+  width: 30%;
+  border-radius: 15vw;
 }
 
 #controls {
@@ -45,20 +60,8 @@ header {
   background-color: transparent;
 }
 
-.logo {
-  width: 25%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.logo img {
-  width: 30%;
-  border-radius: 15vw;
-}
-
 .begin-cont {
-  height: 35vh;
+  height: 20vh;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -80,7 +83,6 @@ header {
   text-decoration: none;
 }
 
-
 .ticker-container {
   display: flex;
   justify-content: space-between;
@@ -101,12 +103,15 @@ header {
 }
 
 @keyframes ticker {
+
   0% {
     transform: translate3d(0, 0, 0);
   }
+
   100% {
     transform: translate3d(-100%, 0, 0);
   }
+
 }
 
 .ticker-transition {
@@ -120,49 +125,20 @@ header {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-name: ticker;
-  animation-duration: 20s;
+  animation-duration: 30s;
 }
-
-/* .ticker-container:hover .ticker-transition{
-  animation-play-state: paused;
-  cursor: pointer;
-} */
 
 .ticker-item {
+  border-radius: 20px;
   height: 100%;
   width: 40%;
+  padding: 0 20px;
   margin: 0 50px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-  background-color: white;
-}
-
-.ticker-item a {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  height: 100%;
-  width: 100%;
-  text-decoration: none;
-}
-
-.ticker-item a img {
-  margin-top: 10px;
-  width: 90%;
-}
-
-.ticker-item a div {
-  width: 90%;
-  font-size: 20px;
-  color: black;
-  text-decoration: underline;
-  word-break: normal;
-  white-space: normal;
-  margin-bottom: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  background-color: white;
+  word-break: normal;
+  white-space: normal;
 }
