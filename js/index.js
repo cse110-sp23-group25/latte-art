@@ -13,7 +13,7 @@ function init () {
 // fetch facts from json
 async function getFacts() {
     try {
-        const info = await (await fetch('../assets/facts.json')).json()
+        const info = await (await fetch('./assets/facts.json')).json()
         const idx = Math.floor(Math.random() * 5)
         const transition = document.createElement('div')
         transition.className = 'ticker-transition'
